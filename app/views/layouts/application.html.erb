@@ -18,7 +18,7 @@
 
 </head>
 
-<body >
+<body>
 <nav class="navbar navbar-dark bg-dark sticky-top py-1">
   <div class="container d-flex flex-column flex-md-row justify-content-between">
     <a class="py-2" href="#">
@@ -28,9 +28,15 @@
         <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/>
       </svg>
     </a>
-    <span class="py-2 d-none d-md-inline-block font-weight-bold link-to"><%= link_to "Main page", home_path %></span>
-    <span class="py-2 d-none d-md-inline-block font-weight-bold"><%= link_to "Create new post", new_post_path %></span>
-    <span class="py-2 d-none d-md-inline-block font-weight-bold"><%= link_to "About", about_path %></span>
+    <span class="py-2 d-none d-md-inline-block font-weight-bold link-to"><%= link_to "Главная страница", home_path %></span>
+    <% if user_signed_in? %>
+      <span class="py-2 d-none d-md-inline-block font-weight-bold"><%= link_to "Создать новый Ивент", new_post_path %></span>
+      <span class="py-2 d-none d-md-inline-block font-weight-bold"><%= link_to "Выход", destroy_user_session_path, method: :delete %></span>
+    <% else %>
+      <span class="py-2 d-none d-md-inline-block font-weight-bold"><%= link_to "Вход", new_user_session_path %></span>
+      <span class="py-2 d-none d-md-inline-block font-weight-bold"><%= link_to "Регистрация", new_user_registration_path %></span>
+    <% end %>
+    <span class="py-2 d-none d-md-inline-block font-weight-bold"><%= link_to "О проекте", about_path %></span>
   </div>
 </nav>
 <div class="container">
