@@ -1,9 +1,18 @@
-<h2>All posts:</h2>
 
 <% @post.each do |post| %>
-  <div class="alert alert-light">
-    <h3><%= post.title %></h3>
-    <p><%= post.body %></p>
-    <%= link_to "Reed more...", post_path(post), :class => 'btn btn-outline-primary ' %>
+  <div class="card mb-3 shadow mt-3" style="max-width: 700px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="http://i66.tinypic.com/hunnlw.jpg" class="card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title font-weight-bold"><%= post.title %></h3>
+          <p class="card-text font-italic"><%= post.body %></p>
+          <p class="card-text"><small class="text-muted"><%= post.time %> - <%= post.end_time %></small></p>
+          <%= link_to "Reed more...", post_path(post), :class => 'btn btn-outline-primary float-right mb-2' %>
+        </div>
+      </div>
+    </div>
   </div>
 <% end %>
