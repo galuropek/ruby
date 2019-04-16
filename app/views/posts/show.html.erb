@@ -2,10 +2,13 @@
 <h5><%= @post.body %></h5>
 <h5>Стартуем в <%= @post.time %></h5>
 <h5>Заканчиваем в <%= @post.end_time %></h5>
-<hr>
-<%= link_to "Edit", edit_post_path(@post), :class => 'btn btn-warning' %>
-<%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure?"}, :class => 'btn btn-danger' %>
-<hr>
+
+<% if current_user.admin %>
+  <hr>
+  <%= link_to "Edit", edit_post_path(@post), :class => 'btn btn-warning' %>
+  <%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure?"}, :class => 'btn btn-danger' %>
+  <hr>
+<% end %>
 
 <h2>All comments:</h2>
 <% @post.comments.each do |comment| %>

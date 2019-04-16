@@ -31,6 +31,7 @@
     <span class="py-2 d-none d-md-inline-block font-weight-bold link-to"><%= link_to "Главная страница", home_path %></span>
     <% if user_signed_in? %>
       <span class="py-2 d-none d-md-inline-block font-weight-bold"><%= link_to "Создать новый Ивент", new_post_path %></span>
+      <span class="py-2 d-none d-md-inline-block font-weight-bold"><%= link_to "Личный кабинет", user_path(current_user)%></span>
       <span class="py-2 d-none d-md-inline-block font-weight-bold"><%= link_to "Выход", destroy_user_session_path, method: :delete %></span>
     <% else %>
       <span class="py-2 d-none d-md-inline-block font-weight-bold"><%= link_to "Вход", new_user_session_path %></span>

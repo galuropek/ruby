@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   # для остальных страниц get
   get 'about' => 'pages#about', as: 'about'
-
+  resources :users
   # для отслежсивания юрл адрессов create, new, update, delete и других
   resources :posts do
     resources :comments
