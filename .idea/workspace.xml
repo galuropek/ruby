@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3d5b7c4-531e-4619-8ec9-2f842cac08c5" name="Default Changelist" comment="Simple profile page example (many thinks are not ready yet)">
+    <list default="true" id="a3d5b7c4-531e-4619-8ec9-2f842cac08c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -44,11 +45,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
+            <state relative-caret-position="272">
+              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/posts_helper.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/jobs/application_job.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/mailers/application_mailer.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="65" lean-forward="true" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -62,6 +128,8 @@
       <find>navba</find>
       <find>routes</find>
       <find>addadmin</find>
+      <find>sav</find>
+      <find>registration</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -73,7 +141,6 @@
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/pages/about.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/posts/edit.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190414172938_add_admin_to_user.rb" />
@@ -81,14 +148,16 @@
         <option value="$PROJECT_DIR$/app/views/posts/new.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/models/post.rb" />
-        <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/users/profile.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
       </list>
     </option>
   </component>
@@ -122,7 +191,67 @@
             <path>
               <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
               <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name=".bundle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+              <item name="channels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="channels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="channels" type="462c0819:PsiDirectoryNode" />
+              <item name="application_cable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
@@ -134,13 +263,108 @@
               <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
               <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="concerns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="jobs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="mailers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
               <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="concerns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="devise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="devise" type="462c0819:PsiDirectoryNode" />
+              <item name="confirmations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="devise" type="462c0819:PsiDirectoryNode" />
+              <item name="mailer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="devise" type="462c0819:PsiDirectoryNode" />
+              <item name="passwords" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="devise" type="462c0819:PsiDirectoryNode" />
+              <item name="registrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="devise" type="462c0819:PsiDirectoryNode" />
+              <item name="sessions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="devise" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="devise" type="462c0819:PsiDirectoryNode" />
+              <item name="unlocks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
@@ -148,6 +372,13 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
@@ -166,29 +397,12 @@
             <path>
               <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
               <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
               <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="environments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="migrate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simpleblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simpleblog" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -338,7 +552,7 @@
       <workItem from="1555249048407" duration="14897000" />
       <workItem from="1555348910873" duration="5423000" />
       <workItem from="1555438308110" duration="6912000" />
-      <workItem from="1555775165190" duration="4832000" />
+      <workItem from="1555775165190" duration="9839000" />
     </task>
     <task id="LOCAL-00001" summary="Simple blog">
       <created>1554644465849</created>
@@ -438,17 +652,23 @@
       <option name="project" value="LOCAL" />
       <updated>1555444575451</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added all posts viewer (+ post edit button realisation)">
+      <created>1555781472582</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1555781472582</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53406000" />
+    <option name="totallyTimeSpent" value="58413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1299" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18435754" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36632082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -534,7 +754,8 @@
     <MESSAGE value="Fixed incorrect time field" />
     <MESSAGE value="Creating users accounts" />
     <MESSAGE value="Simple profile page example (many thinks are not ready yet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simple profile page example (many thinks are not ready yet)" />
+    <MESSAGE value="Added all posts viewer (+ post edit button realisation)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all posts viewer (+ post edit button realisation)" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -603,46 +824,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
@@ -665,27 +852,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb.old">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="468">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/shared/_links.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -696,24 +920,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="122" lean-forward="true" selection-start-line="8" selection-start-column="122" selection-end-line="8" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="108" lean-forward="true" selection-start-line="16" selection-start-column="92" selection-end-line="16" selection-end-column="108" />
+        <state relative-caret-position="51">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
+        <state relative-caret-position="306">
+          <caret line="18" column="65" lean-forward="true" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/posts_helper.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/jobs/application_job.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/application_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
