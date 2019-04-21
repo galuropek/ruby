@@ -4,7 +4,11 @@
   <div class="card mb-3 shadow float-center" style="max-width: 700px;">
     <div class="row no-gutters">
       <div class="col-md-4">
-        <img src="http://i66.tinypic.com/hunnlw.jpg" class="card-img" alt="...">
+        <% if post.image? %>
+          <%= image_tag post.image.url(:large)%>
+        <% else %>
+          <img src="http://i66.tinypic.com/hunnlw.jpg" class="card-img" alt="...">
+        <% end %>
       </div>
       <div class="col-md-8">
         <div class="card-body">

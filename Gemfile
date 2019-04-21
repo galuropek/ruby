@@ -16,6 +16,13 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
+#This gem provides a simple and extremely flexible way to upload files from Ruby applications.
+# It works well with Rack based web applications, such as Ruby on Rails.
+gem 'carrierwave', '~> 1.0'
+
+#Image resizer
+gem "mini_magick"
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
