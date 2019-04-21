@@ -1,0 +1,41 @@
+<% if !@user.nickname.nil? %>
+  <% nick = @user.nickname %>
+<% else %>
+  <% nick = @user.email %>
+<% end %>
+
+<h1>Congrat! <%= nick %></h1>
+
+<%= form_for :user, url: user_path(@user), method: :patch do |f| %>
+
+  <% if @user.errors.any? %>
+    <% @user.errors.full_messages.each do |msg| %>
+      <div class="alert alert-danger"><%= msg %></div>
+    <% end %>
+  <% end %>
+
+  <p>
+    email<br>
+    <%= f.text_field(:email, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    Ник (если не указать ник, то под постами и в комментариях будет ваш email)<br>
+    <%= f.text_field(:nickname, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    Имя (по желанию)<br>
+    <%= f.text_field(:name, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    Фамилия (по желанию)<br>
+    <%= f.text_field(:name, {:class => 'form-control'}) %>
+  </p>
+
+  <p>
+    <%= f.submit({:class => 'btn btn-dark'}) %>
+  </p>
+
+<% end %>

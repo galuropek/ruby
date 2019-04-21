@@ -6,7 +6,7 @@
 <% if current_user.admin || current_user.id == @post.user_id%>
   <hr>
   <%= link_to "Edit", edit_post_path(@post), :class => 'btn btn-warning' %>
-  <%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure?"}, :class => 'btn btn-danger' %>
+  <%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Вы уверены, что хотите удалить этот пост?"}, :class => 'btn btn-danger' %>
   <hr>
 <% end %>
 
