@@ -1,4 +1,9 @@
 <h1>Your profile:</h1>
+<% if @user.image? %>
+  <%= image_tag @user.image.url(:large) %>
+<% else %>
+  <img src="http://i66.tinypic.com/hunnlw.jpg" class="card-img" alt="..." style="max-width: 250px;">
+<% end %>
 <h5><%= @user.email %></h5>
 <h5><%= @user.nickname %></h5>
 <h5><%= @user.surname %> <%= @user.name %></h5>

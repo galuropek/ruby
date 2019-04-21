@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_21_090325) do
+ActiveRecord::Schema.define(version: 2019_04_21_093425) do
 
   create_table "comments", force: :cascade do |t|
     t.string "username"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2019_04_21_090325) do
     t.string "surname"
     t.string "nickname"
     t.string "avatar"
+    t.string "image"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
