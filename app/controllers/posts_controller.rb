@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   def index
     @post = Post.all
     @post.each do |post|
-      post.body = post.body[0, 150] + '...' if post.body.size > 150
+      post.body = post.body[0, 100] + '...' if post.body.size > 100
     end
   end
 
