@@ -1,6 +1,6 @@
 <h1>Your profile:</h1>
 <% if @user.image? %>
-  <%= image_tag @user.image.url(:large) %>
+  <%= image_tag @user.image.url(:large), class: 'img-avatar shadow' %>
 <% else %>
   <img src="http://i66.tinypic.com/hunnlw.jpg" class="card-img" alt="..." style="max-width: 250px;">
 <% end %>

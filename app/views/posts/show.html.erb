@@ -1,9 +1,11 @@
-<h2><%= @post.title %></h2>
-<h5><%= @post.body %></h5>
-<h5>Стартуем в <%= @post.time %></h5>
-<h5>Заканчиваем в <%= @post.end_time %></h5>
+<div class="float center">
+    <h2><%= @post.title %></h2>
+    <h5><%= @post.body %></h5>
+    <h5>Стартуем в <%= @post.time %></h5>
+    <h5>Заканчиваем в <%= @post.end_time %></h5>
+</div>
 
-<% if current_user.admin || current_user.id == @post.user_id%>
+<% if current_user.admin || current_user.id == @post.user_id %>
   <hr>
   <%= link_to "Edit", edit_post_path(@post), :class => 'btn btn-warning' %>
   <%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Вы уверены, что хотите удалить этот пост?"}, :class => 'btn btn-danger' %>
@@ -23,9 +25,9 @@
 <%= form_for([@post, @post.comments.build]) do |f| %>
 
   <%# if @post.errors.any? %>
-    <%# @post.errors.full_messages.each do |msg| %>
-<!--      <div class="alert alert-danger"><%#= msg %></div>-->
-    <%# end %>
+  <%# @post.errors.full_messages.each do |msg| %>
+  <!--      <div class="alert alert-danger"><%#= msg %></div>-->
+  <%# end %>
   <%# end %>
 
   <p>

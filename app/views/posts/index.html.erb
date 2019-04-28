@@ -1,29 +1,41 @@
 <br>
-<% @post.each do |post| %>
-  <div class="card mb-3 shadow float-center" style="max-width: 700px;">
-    <div class="row no-gutters">
-      <div class="col-md-4">
-        <% if post.image? %>
-          <%= image_tag post.image.url(:large)%>
-        <% else %>
-          <img src="http://i66.tinypic.com/hunnlw.jpg" class="card-img" alt="...">
+
+<% @post.each_with_index do |post, index| %>
+
+
+  <% if index % 3 == 0 %>
+    <!--  Row-->
+    <div class="row">
+  <% end %>
+
+  <!--  Col-->
+  <div class="col-4 mb-3">
+    <div class="card ml-5" style="width: 250px; height: 700px;">
+      <% if post.image? %>
+        <%= image_tag post.image.url(:large) %>
+      <% else %>
+        <img src="http://i66.tinypic.com/hunnlw.jpg" class="card-img" alt="..." >
+      <% end %>
+      <div class="card-body">
+        <h4 class="card-title font-weight-bold"><%= post.title %></h4>
+        <hr>
+        <p class="h6 font-italic"><%= post.body %></p>
+        <hr>
+        <p class="card-text">
+          <small class="text-muted"><%= post.time %> - <%= post.end_time %></small>
+        </p>
+        <% if user_signed_in? %>
+          <%= link_to "Reed more...", post_path(post), :class => 'btn btn-dark float-right mb-2' %>
         <% end %>
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h3 class="card-title font-weight-bold"><%= post.title %></h3>
-          <p class="card-text font-italic"><%= post.body %></p>
-          <p class="card-text">
-            <small class="text-muted"><%= post.time %> - <%= post.end_time %></small>
-          </p>
-          <% if user_signed_in? %>
-            <%= link_to "Reed more...", post_path(post), :class => 'btn btn-dark float-right mb-2' %>
-          <% end %>
-          <p class="font-italic">Author: <%= User.find(post.user_id).email %></p>
-          <p class="font-italic">Created_at: <%= post.created_at.strftime "%Y-%m-%d %H:%M:%S" %></p>
-          <p class="font-italic">Updated_at: <%= post.updated_at.strftime "%Y-%m-%d %H:%M:%S" %></p>
-        </div>
+        <p class="font-italic">Author: <%= User.find(post.user_id).email %></p>
+        <p class="font-italic">Created_at: <%= post.created_at.strftime "%Y-%m-%d %H:%M:%S" %></p>
+        <p class="font-italic">Updated_at: <%= post.updated_at.strftime "%Y-%m-%d %H:%M:%S" %></p>
       </div>
     </div>
   </div>
+
+  <% if (index + 1) % 3 == 0 %>
+    <!--  End Row-->
+    </div>
+  <% end %>
 <% end %>
