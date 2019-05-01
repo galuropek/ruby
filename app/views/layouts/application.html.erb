@@ -44,7 +44,7 @@
   </div>
 
   <% if !current_user.nil? && current_user.image? %>
-    <%= image_tag current_user.image.url(:thumb), class: 'img-avatar-nav mr-5' %>
+    <%= image_tag current_user.image.url(:thumb), class: 'img-avatar-nav mr-5 shadow' %>
   <% end %>
 
 </nav>
@@ -94,11 +94,11 @@
   </div>
 </div>
 
-<footer class="footer py-3 fixed-bottom">
+<!--<footer class="footer py-3 fixed-bottom">-->
 
-    <span class="text-muted">Place sticky footer content here.</span>
+<!--    <span class="text-muted">Place sticky footer content here.</span>-->
 
-</footer>
+<!--</footer>-->
 
 </body>
 </html>
