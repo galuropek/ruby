@@ -1,26 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3d5b7c4-531e-4619-8ec9-2f842cac08c5" name="Default Changelist" comment="Edited main page.">
+    <list default="true" id="a3d5b7c4-531e-4619-8ec9-2f842cac08c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20190415181120_add_references_to_post.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190415181120_add_references_to_post.rb.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190407105855_create_posts.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190407105855_create_posts.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db/migrate/20190415181120_add_references_to_post.rb" beforeDir="false" afterPath="$PROJECT_DIR$/project/db/migrate/20190415181120_add_references_to_post.rb.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/project/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/public/uploads/post/image/17/large_wallpaper-2432299.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/public/uploads/post/image/17/thumb_wallpaper-2432299.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/public/uploads/post/image/17/wallpaper-2432299.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/public/uploads/post/image/18/17_8894_oboi_superkar_na_trasse_1920x1080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/public/uploads/post/image/18/large_17_8894_oboi_superkar_na_trasse_1920x1080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/public/uploads/post/image/18/thumb_17_8894_oboi_superkar_na_trasse_1920x1080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/post/image/17/large_wallpaper-2432299.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/post/image/17/thumb_wallpaper-2432299.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/post/image/17/wallpaper-2432299.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/post/image/18/17_8894_oboi_superkar_na_trasse_1920x1080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/post/image/18/large_17_8894_oboi_superkar_na_trasse_1920x1080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/post/image/18/thumb_17_8894_oboi_superkar_na_trasse_1920x1080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/db/migrate/20190407105855_create_posts.rb" beforeDir="false" afterPath="$PROJECT_DIR$/project/db/migrate/20190407105855_create_posts.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -68,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -81,8 +66,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20190407105855_create_posts.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20190414172938_add_admin_to_user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20190415181120_add_references_to_post.rb.old">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -138,7 +145,6 @@
         <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190414172938_add_admin_to_user.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20190407105855_create_posts.rb" />
         <option value="$PROJECT_DIR$/app/views/users/profile.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -157,6 +163,7 @@
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190407105855_create_posts.rb" />
       </list>
     </option>
   </component>
@@ -441,7 +448,7 @@
       <workItem from="1556470020649" duration="1724000" />
       <workItem from="1556471836414" duration="1807000" />
       <workItem from="1556708539495" duration="1754000" />
-      <workItem from="1556710340164" duration="1013000" />
+      <workItem from="1556710340164" duration="1745000" />
     </task>
     <task id="LOCAL-00001" summary="Simple blog">
       <created>1554644465849</created>
@@ -639,11 +646,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556473388191</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Edited main page.">
+      <created>1556711367777</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1556711367777</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108891000" />
+    <option name="totallyTimeSpent" value="109623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1299" height="741" extended-state="6" />
@@ -845,13 +859,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/home.html.erb" />
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190414172938_add_admin_to_user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20190413074224_add_time_to_post.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -863,13 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="43" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190407105855_create_posts.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -1092,9 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190415181120_add_references_to_post.rb.old">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
@@ -1109,6 +1106,27 @@
           <folding>
             <element signature="e#207#243#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190407105855_create_posts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190414172938_add_admin_to_user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190415181120_add_references_to_post.rb.old">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
