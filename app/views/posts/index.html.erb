@@ -17,19 +17,17 @@
         <img src="http://i66.tinypic.com/hunnlw.jpg" class="card-img rounded" alt="...">
       <% end %>
       <div class="card-body">
-        <% s_time = eval(post.time) %>
-        <% e_time = eval(post.end_time) %>
         <h5 class="card-title font-weight-bold"><%= post.title %></h5>
         <hr>
         <p class="body-text h6 font-italic"><%= post.body %></p>
         <hr>
         <p class="mb-1">
           <img src="https://cdn1.imggmi.com/uploads/2019/4/28/74f9da038a0b70ba18ac521d2556c1ca-full.png" border="0"/>
-          <small class="text-muted"><%= "#{s_time[3]}-#{s_time[2]}-#{s_time[1]}" %></small>
+          <small class="text-muted"><%= post.end_time.strftime "%d-%m-%Y" %></small>
         </p>
         <p class="card-text">
           <img src="https://cdn1.imggmi.com/uploads/2019/4/28/91a22c46cbae88fac5a3d0f7ee0df818-full.png" border="0"/>
-          <small class="text-muted"><%= "#{s_time[4]}:#{s_time[5]}" %> - <%= "#{e_time[4]}:#{e_time[5]}" %></small><br>
+          <small class="text-muted"><%= post.time.strftime "%H:%M" %>-<%= post.end_time.strftime "%H:%M" %></small><br>
         </p>
         <hr>
         <small class="text-muted">Автор: <%= User.find(post.user_id).email %></small>
