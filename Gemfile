@@ -18,7 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 
 #This gem provides a simple and extremely flexible way to upload files from Ruby applications.
 # It works well with Rack based web applications, such as Ruby on Rails.
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 
 #Image resizer
 gem "mini_magick"
